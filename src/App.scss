@@ -1,7 +1,7 @@
 @use "./assets/scss/fonts" as *;
 @use "./assets/scss/variables" as *;
 @use "./assets/scss/mixins" as *;
-*{margin: 0;padding: 0;box-sizing: none;}
+*{margin: 0;padding: 0;box-sizing: border-box;}
 .mainpage{
     width: 100%;
     .search{
@@ -21,9 +21,9 @@
         box-shadow: 0 3px 3px rgba($color: #000000, $alpha: 0.33);
         backdrop-filter: saturate(100%) blur(5px);
         transition: 0.5s;
+        outline: none;
         &:focus{
             width: 300px;
-            outline: none;
             border: 0.3px solid rgba(148, 148, 148, 0.45);
         }
     }

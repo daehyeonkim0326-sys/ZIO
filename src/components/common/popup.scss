@@ -36,6 +36,19 @@
   &.is-open {
     transform: translateY(-18%); // ⭐️ 위로 올라옴
   }
+  .popup-header {
+  position: relative;
+  height: 56px;
+}
+
+.popup-top-center-slot {
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translateX(-50%);
+  width: 260px;  // 팝업에서 input이 차지할 폭 (원하는 값)
+  height: 44px;
+}
 }
 }
 

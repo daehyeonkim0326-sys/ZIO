@@ -11,7 +11,7 @@ const Popup = ({
   keyword,
   onSelectItem,
   onBack,
-  popupAnchorRef
+  popupTopCenterRef
 }) => {
   const [mounted, setMounted] = useState(open);
   const [visible, setVisible] = useState(false);
@@ -65,8 +65,10 @@ const Popup = ({
         onMouseDown={(e) => e.stopPropagation()}
         onTransitionEnd={handleTransitionEnd}
       >
-        <div className="search" onMouseDown={(e) => e.stopPropagation()}>
-
+          <div className="popup-header">
+  <div className="popup-top-center-slot" ref={popupTopCenterRef} />
+  <button className="popup-close" onClick={onClose}>×</button>
+</div>
           <button
             className="popup-close"
             onMouseDown={(e) => e.stopPropagation()}
@@ -77,7 +79,7 @@ const Popup = ({
           >
             ×
           </button>
-        </div>
+        
 
         <div className="popup-content">
           {view === "list" && (
