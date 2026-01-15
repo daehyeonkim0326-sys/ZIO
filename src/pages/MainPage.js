@@ -25,7 +25,7 @@ const MainPage = () => {
           type="text"
           placeholder="주차장을 찾아보세요"
           value={keyword}
-          onClick={openPopup}
+          onFocus={openPopup}
           onChange={(e) => setKeyword(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === "Enter") openPopup()
