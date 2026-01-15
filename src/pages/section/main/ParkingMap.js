@@ -17,10 +17,8 @@ export default function ParkingMap({ keyword, selected, onSelectItem }) {
     
   });
 
-  useEffect(() => {
-    fetchParkingLots();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+ 
+ 
 
   // ✅ 1) 필드명 정규화 (name/lat/lng/address로 통일)
   const normalizedLots = useMemo(() => {

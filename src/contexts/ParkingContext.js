@@ -30,7 +30,7 @@ export const ParkingProvider = ({children}) => {
   // if (loadingMap) return <div>지도 로딩중...</div>
   // if (errorMap) return <div>지도 SDK 에러: {String(errorMap)}</div>
   /* 메인페이지 */ 
-  const fetchParkingLots = async () => {
+  const fetchParkingLots = useCallback(async () => {
     setLoadingMain(true);
     setError(null);
 
@@ -45,7 +45,7 @@ export const ParkingProvider = ({children}) => {
     }finally {
       setLoadingMain(false);
     }
-  }
+  },[]);
 
 /* 상세페이지 */
 
