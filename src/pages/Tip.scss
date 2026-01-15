@@ -20,12 +20,14 @@
 .tip-page{
   width: 100%;
   min-width: 430px;
-  height: 100vh;
-  margin-top: 60px;
+  // height: 100vh;
   padding-top: 0.5rem;
   background-color: $color-white;
-  @include respond {
-    margin-top: 0;
+  height: calc(100vh - 60px);
+  @media (max-width: 767px) {
+    margin: 0;
+    padding-top: 4rem;
+    @include flex-layout(column, space-between, center, 2rem)
   }
 
   .tip-list{
@@ -40,7 +42,7 @@
   .tip-footer {
     display: inline-block;
     width: 100%;
-    padding-bottom: 4.5rem;
-    .footer{
-      margin: 0 auto;
-}}}
+    padding: 1rem 0 4.5rem 4rem;
+    background-color: $color-real-white;
+  }
+}

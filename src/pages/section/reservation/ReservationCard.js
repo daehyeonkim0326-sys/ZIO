@@ -106,6 +106,7 @@ const ReservationCard = ({ reservation }) => {
 
   if (!reservation) return null;
   return (
+    <div className="card-wrap">
     <div className="reservation-card">
       <div className="card-badges">
         <p className="badge badge-subs">{payType}</p>
@@ -151,6 +152,7 @@ const ReservationCard = ({ reservation }) => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
