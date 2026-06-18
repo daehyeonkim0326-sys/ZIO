@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+#clock {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  background-color: #98FB28;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#clock .in-time, #clock .out-time {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+}
+#clock .in-time p, #clock .out-time p {
+  display: inline-block;
+  color: #7F31BC;
+  width: 40%;
+  height: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#clock .in-time .clock-input, #clock .out-time .clock-input {
+  width: 50%;
+}/*# sourceMappingURL=Clock.css.map */

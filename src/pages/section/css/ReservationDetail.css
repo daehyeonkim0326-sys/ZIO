@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+.parking-map {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #555;
+}
+.parking-map .parking-direction {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #B67FDB;
+  text-align: center;
+}
+.parking-map .lane {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 26px;
+}
+.parking-map .lane.lane-left {
+  margin-right: 16px;
+}
+.parking-map .lane.lane-right {
+  margin-left: 16px;
+}
+.parking-map .lane .parking-box {
+  padding: 1rem 3rem;
+  border-radius: 0.4rem;
+  background: #555;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.parking-map .lane .parking-box.selected {
+  color: #fff;
+}
+.parking-map .lane .parking-box.taken {
+  background: #BBB;
+}
+.parking-map .lane .parking-box.taken::after {
+  color: #555;
+}
+.parking-map .lane .parking-box .box-code {
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: auto;
+  font-weight: bold;
+  color: #F2F0EF;
+}
+.parking-map .lane .parking-box.box-일반 {
+  border: 4px solid #F2F0EF;
+}
+.parking-map .lane .parking-box.box-장애인 {
+  border: 4px solid #FFD943;
+}
+.parking-map .lane .parking-box.box-경차 {
+  border: 4px solid #ff5e5e;
+}
+.parking-map .lane .parking-box.box-전기차 {
+  border: 4px solid #9CFC2E;
+}
+.parking-map .lane .parking-box.selected {
+  background: #FF5E5E;
+}
+.parking-map .lane .parking-box.selected .box-code {
+  color: #F2F0EF;
+}
+.parking-map .road {
+  width: 2rem;
+}/*# sourceMappingURL=ReservationDetail.css.map */

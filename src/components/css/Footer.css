@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+.footer {
+  width: 230px;
+  margin-top: auto;
+  font-size: 12px;
+  line-height: 1.45;
+  color: #555;
+  text-align: left;
+}
+.footer h3 {
+  margin: 0 0 6px;
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: auto;
+  font-weight: bold;
+  color: #555;
+  letter-spacing: -0.2px;
+}
+.footer p {
+  margin: 2px 0;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: #aaa;
+  letter-spacing: -0.2px;
+}
+.footer select {
+  margin-top: 10px;
+  width: 150px;
+  height: 2rem;
+  padding: 0 2rem 0 0.7rem;
+  font-size: 0.8rem;
+  color: #555;
+  border: 1px solid rgba(187, 187, 187, 0.6);
+  border-radius: 8rem;
+  background-color: rgba(187, 187, 187, 0.18);
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23555' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+.footer select:hover {
+  background-color: rgba(187, 187, 187, 0.26);
+  border-color: rgba(187, 187, 187, 0.85);
+}
+.footer select:focus {
+  border-color: rgba(127, 49, 188, 0.8);
+}
+@media all and (min-width: 768px) {
+  .footer {
+    background-color: #fff;
+  }
+}/*# sourceMappingURL=Footer.css.map */

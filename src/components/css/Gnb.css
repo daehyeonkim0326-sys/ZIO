@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+.gnb-mobile {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
+}
+.gnb-mobile .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  color: #7F31BC;
+  width: 100%;
+  padding: 0.5rem;
+  border-top: 0.3px solid rgba(148, 148, 148, 0.45);
+  border-top-style: groove;
+}
+.gnb-mobile .menu svg {
+  width: 30px;
+  height: 30px;
+}
+.gnb-mobile .menu li {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 15px;
+}
+.gnb-mobile .menu li:hover {
+  background-color: rgba(148, 148, 148, 0.45);
+  box-shadow: 0 3px 3px #eee;
+  backdrop-filter: saturate(100%) blur(5px);
+}
+@media all and (min-width: 768px) {
+  .gnb-mobile {
+    display: none;
+  }
+}
+
+.gnb-desktop {
+  display: none;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  z-index: 10;
+  cursor: pointer;
+}
+.gnb-desktop .gnb-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.gnb-desktop .gnb-wrap .gnb-list {
+  background-color: #fff;
+}
+.gnb-desktop .gnb-wrap .gnb-list .gnb-txt {
+  width: 230px;
+  padding: 1rem;
+  border-bottom: 1px solid #BBB;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: auto;
+  font-weight: bold;
+}
+@media all and (min-width: 768px) {
+  .gnb-desktop {
+    display: block;
+  }
+}/*# sourceMappingURL=Gnb.css.map */

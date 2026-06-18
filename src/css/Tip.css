@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+.tip-page {
+  width: 100%;
+  min-width: 430px;
+  padding-top: 0.5rem;
+  background-color: #F2F0EF;
+  height: calc(100vh - 60px);
+}
+@media (max-width: 767px) {
+  .tip-page {
+    margin: 0;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.tip-page .tip-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tip-footer {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .tip-footer {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0 4.5rem 4rem;
+    background-color: #fff;
+  }
+}/*# sourceMappingURL=Tip.css.map */

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+#price {
+  width: 100%;
+  margin: 1rem auto;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: auto;
+  font-weight: 400;
+}/*# sourceMappingURL=Price.css.map */

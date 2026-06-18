@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+.parking-scroll {
+  position: relative;
+  overflow-y: auto;
+}
+
+.parking-card {
+  position: fixed;
+  left: 50%;
+  bottom: 150px;
+  transform: translateX(-50%);
+  width: 70%;
+  padding: 0.5rem 0.5rem;
+  border-radius: 1rem;
+  background: #F2F0EF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+@media all and (min-width: 768px) {
+  .parking-card {
+    display: none;
+  }
+}
+.parking-card-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 1rem;
+  background: #555;
+  flex: 0 0 auto;
+}
+.parking-card-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+.parking-card-name {
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: auto;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.parking-card-addr {
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: auto;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reservation-info .parking-header-desktop {
+  width: 100%;
+  height: auto;
+  min-height: 220px;
+  max-height: 500px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  background: transparent;
+}
+.reservation-info .parking-header-desktop .img {
+  height: 250px;
+}
+
+.reserve-popup-body {
+  margin-top: 12px;
+}
+.reserve-popup-body .reserve-info {
+  padding: 1rem;
+}
+.reserve-popup-body .reserve-info .reserve-select-info {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+.reserve-popup-body .reserve-info .reserve-select-info .reserve-info-name {
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: auto;
+  font-weight: bold;
+}
+.reserve-popup-body .reserve-info .reserve-select-info .reserve-info-code {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.reserve-popup-body .reserve-info .reserve-select-info .reserve-info-code .reserve-code {
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: auto;
+  font-weight: bold;
+}
+
+.reserve-popup-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border-radius: 8rem;
+  width: 300px;
+  padding: 1rem 0.6rem;
+  box-sizing: border-box;
+  color: #222;
+  background-color: #98FB28;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reserve-popup-button:hover {
+  background-color: #F2F0EF;
+  color: #222;
+  box-shadow: inset 0 -2px 6px rgba(152, 251, 40, 0.22);
+}
+@media all and (min-width: 768px) {
+  .reserve-popup-button {
+    border-radius: 8rem;
+  }
+}
+.reserve-popup-button {
+  width: 100%;
+}
+
+.parking-header-desktop .img {
+  width: 100%;
+  height: 300px;
+  background-color: #555;
+}
+
+.detail-desktop .popup-overlay {
+  position: relative !important;
+  inset: auto !important;
+  background: none !important;
+}
+.detail-desktop .popup {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  height: auto !important;
+  box-shadow: none !important;
+}
+.detail-desktop .popup-overlay,
+.detail-desktop .popup,
+.detail-desktop .popup-content,
+.detail-desktop .popup-track,
+.detail-desktop .popup-panel,
+.detail-desktop .popup-detail {
+  overflow: hidden !important;
+  max-height: none !important;
+}
+.detail-desktop .popup-overlay .btn,
+.detail-desktop .popup .btn,
+.detail-desktop .popup-content .btn,
+.detail-desktop .popup-track .btn,
+.detail-desktop .popup-panel .btn,
+.detail-desktop .popup-detail .btn {
+  display: none !important;
+}
+.detail-desktop .popup-overlay .back,
+.detail-desktop .popup .back,
+.detail-desktop .popup-content .back,
+.detail-desktop .popup-track .back,
+.detail-desktop .popup-panel .back,
+.detail-desktop .popup-detail .back {
+  display: none !important;
+}
+
+.copy-toast {
+  width: 60px;
+  height: 25px;
+  position: absolute;
+  left: 68%;
+  transform: translateX(-50%) translateY(10px);
+  top: 20px;
+  background: #7F31BC;
+  color: #fff;
+  padding-top: 6px;
+  border-radius: 1rem;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.copy-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}/*# sourceMappingURL=ReservationInfo.css.map */

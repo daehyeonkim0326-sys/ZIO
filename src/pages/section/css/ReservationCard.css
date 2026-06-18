@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+.card-wrap {
+  width: 100%;
+  max-width: 500px;
+}
+@media all and (min-width: 768px) {
+  .card-wrap {
+    max-width: 100%;
+  }
+}
+.card-wrap {
+  margin: 0 auto;
+  height: 90vh;
+  position: relative;
+}
+.card-wrap .reservation-card {
+  width: 85%;
+  margin: 1rem auto;
+  background: #F2F0EF;
+  border-radius: 18px;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 680px;
+}
+.card-wrap .reservation-card .card-badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.card-wrap .reservation-card .card-badges .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  white-space: nowrap;
+}
+.card-wrap .reservation-card .card-badges .badge-subs {
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: auto;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background: #7F31BC;
+  color: #fff;
+}
+.card-wrap .reservation-card .card-badges .badge-status {
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: #7F31BC;
+}
+.card-wrap .reservation-card .card-badges .badge-status.USING {
+  color: #7F31BC;
+}
+.card-wrap .reservation-card .card-badges .badge-status.DONE {
+  color: #555;
+}
+.card-wrap .reservation-card .card-badges .badge-status.RESERVED {
+  color: #7F31BC;
+}
+.card-wrap .reservation-card .card-badges .badge-status.CANCELED {
+  color: #FF5E5E;
+}
+.card-wrap .reservation-card .card-rows {
+  margin-top: 18px;
+}
+.card-wrap .reservation-card .card-rows .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  font-family: "Welcome";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: auto;
+  font-weight: 400;
+  padding: 7px 0;
+}
+.card-wrap .reservation-card .card-rows .row .label {
+  color: #555;
+  min-width: 88px;
+  letter-spacing: -0.2px;
+}
+.card-wrap .reservation-card .card-rows .row .value {
+  color: #222;
+  text-align: right;
+  letter-spacing: -0.2px;
+  max-width: 68%;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.card-wrap .reservation-card .card-rows .row.amount {
+  padding-top: 10px;
+}
+.card-wrap .reservation-card .card-rows .row.amount .label {
+  color: #555;
+}
+.card-wrap .reservation-card .card-rows .row.amount .value {
+  color: #222;
+}
+@media all and (min-width: 768px) {
+  .card-wrap .reservation-card {
+    border-radius: 22px;
+    padding: 22px 28px;
+  }
+  .card-wrap .reservation-card .card-badges .badge-type {
+    padding: 8px 18px;
+  }
+  .card-wrap .reservation-card .card-rows {
+    margin-top: 20px;
+  }
+  .card-wrap .reservation-card .card-rows .row {
+    padding: 8px 0;
+  }
+  .card-wrap .reservation-card .card-rows .row .label {
+    min-width: 120px;
+  }
+  .card-wrap .reservation-card .card-rows .row .value {
+    max-width: 72%;
+  }
+}/*# sourceMappingURL=ReservationCard.css.map */

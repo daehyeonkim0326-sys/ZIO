@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Welcome";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+.tip-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 1rem;
+  /*모든 카드 높이 통일 */
+  height: 140px;
+  padding: 1.1rem 1rem;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.06);
+  /*내용 세로 중앙 정렬 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+
+.tip-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tip-img img {
+  width: 80px;
+  height: 80px;
+}
+
+.tip-text {
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+  /* 단어 단위 줄바꿈*/
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tip-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0 0 0.5rem;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  width: 65%;
+}
+
+.tip-text p.tip-txt {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}/*# sourceMappingURL=TipCard.css.map */
