@@ -45,17 +45,15 @@ const Layout = () => {
   const isDetail = pathname.startsWith("/detail");
   return (
     <div id="app">
-<<<<<<< HEAD
+
       <Header
           onOpen={open}
           keyword={keyword}
           setKeyword={setKeyword}
           onOpenpopup={openPopup}
         />
-=======
-      <Header  onOpenPopup={openPopup} keyword={keyword} setKeyword={setKeyword}/>
->>>>>>> b41e89754e9567975a831964e2fcbcd43ed0c495
-      {/* 데스크탑일 때  */}
+
+          {/* 데스크탑일 때  */}
 
       <main className="layout-main">
         <section className="sec1">
