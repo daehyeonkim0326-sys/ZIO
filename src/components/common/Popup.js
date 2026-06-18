@@ -77,17 +77,18 @@ const goLogin = () => {
 }
   useEffect(() => {
     if (open) {
-      setMounted(true)
-      setVisible(false)
-      setTimeout(() => {
-        if (!sheetRef.current) return
-        sheetRef.current.getBoundingClientRect()
-        setVisible(true)
-      }, 0)
+      setMounted(true);
+      setVisible(false);
+      const timer = setTimeout(() => {
+        if (!sheetRef.current) return;
+        sheetRef.current.getBoundingClientRect();
+        setVisible(true);
+      }, 50);
+      return () => clearTimeout(timer);
     } else {
-      setVisible(false)
+      setVisible(false);
     }
-  }, [open])
+  }, [open]);
 
   const handleTransitionEnd = (e) => {
     if (!open && e.propertyName === "transform") {
