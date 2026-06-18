@@ -28,7 +28,7 @@ const Popup = ({
   const { lotDetail } = useParking();
   const address = selected?.address ?? selected?.addr ?? lotDetail?.address ?? "";
   
-   const [setShowToast] = useState(false);
+   const [showToast, setShowToast] = useState(false);
      const toastTimer = useRef(null);
   const [mounted, setMounted] = useState(open);
   const [visible, setVisible] = useState(false);
@@ -131,7 +131,11 @@ const goLogin = () => {
   return (
     <div
       className={`popup-overlay ${visible ? "is-open" : ""}`}
-      onMouseDown={onClose}
+      onMouseDown={(e) => {
+        // input이 focus 중이면 종료하지 않음
+        if (e.target.tagName === 'INPUT') return;
+        onClose();
+      }}
     >
       <div
         ref={sheetRef}
@@ -202,6 +206,7 @@ const goLogin = () => {
                   className="thumb"
                   src={getSelectedImage()}
                   alt={selected?.parking_name ?? "주차장 이미지"}
+                  onMouseDown={(e) => e.stopPropagation()}
                 />
               <div className="txt">
                 <h3>{selected.parking_name}</h3>
