@@ -25,6 +25,7 @@ const Popup = ({
   onBack,
   list = [],
 }) => {
+<<<<<<< HEAD
   const { lotDetail } = useParking();
   const address = selected?.address ?? selected?.addr ?? lotDetail?.address ?? "";
   
@@ -46,6 +47,21 @@ const Popup = ({
     if (index >= 0) return parkingLot[index % parkingLot.length];
     return parking;
   };
+=======
+  const {
+    lotDetail,
+  } = useParking();
+  const address = {lotDetail};
+  
+   const [showToast, setShowToast] = useState(false);
+     const toastTimer = useRef(null);
+  const [mounted, setMounted] = useState(open);
+  const [visible, setVisible] = useState(false);
+  const navigate=useNavigate();
+  const { user } = useAuth();
+  const sheetRef = useRef(null);
+  const parkingLot = [parkingLot1,parkingLot2,parkingLot3,parkingLot4,parkingLot5,parkingLot6,parkingLot7,parkingLot8,parkingLot9]
+>>>>>>> b41e89754e9567975a831964e2fcbcd43ed0c495
   const goDetail =()=>{
     if (!selected) return;
      onClose()  
@@ -200,8 +216,13 @@ const goLogin = () => {
             <div className="detail">
               <img
                   className="thumb"
+<<<<<<< HEAD
                   src={getSelectedImage()}
                   alt={selected?.parking_name ?? "주차장 이미지"}
+=======
+                  src={selected?.parkingLot?.[0] ?? parking}
+                  alt={selected?.parkingLot ?? "주차장 이미지"}
+>>>>>>> b41e89754e9567975a831964e2fcbcd43ed0c495
                 />
               <div className="txt">
                 <h3>{selected.parking_name}</h3>
